@@ -1,14 +1,16 @@
-import * as GetResults from '../actions/index';
+import * as newsActions from '../actions/index';
 
-const initialState = [];
+const initialState = [
+	articles: [],
+	error: null
+];
 
 export const resultsReducer = (state=initialState, action) => {
-	if (action.type === actions.fetchResults) {
-		return [...state, {
-			success:
-			fail:
-		}];
+	if (action.type === newsActions.FETCH_NEWS_SUCCESS) {
+		return {...state, {articles: action.articles}};
 	}
-
+	if (action.type === newsActions.FETCH_NEWS_ERROR){
+		return {...state, {error: action.error}};
+	}
 	return state;
 };
