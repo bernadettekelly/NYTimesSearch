@@ -1,36 +1,38 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import * as newsActions from './actions/index';
+import * as newsActions from '../actions/index';
 
-class Content extends react.Component {
+class Content extends React.Component {
 	constructor(props) {
 		super(props);
 		this.fetchNews = this.fetchNews.bind(this);
 	}
-	fetchNews() {
-		this.props.dispatch(newsActions.fetchNews);
+	fetchNews(event) {
+		event.preventDefault()
+		this.props.dispatch(newsActions.fetchNews(this.refs.from.value, this.refs.to.value));
 	}
 	render(){
-		const {news} = props;
+		console.log(this.props);
+		const {news} = this.props;
 	
 	return (
 		<div>
 			<section>
-				<h1>{props.title}</h1>
-				<h2>{props.subtitle}</h2>
-			</section
+				<h1>{this.props.title}</h1>
+				<h2>{this.props.subtitle}</h2>
+			</section>
 			<section>
-				<form id="Form"><form action="#" method="post">
-					<label for="dateFrom-entry">Enter Start Date</label>
-					<input type="date" name="dateFrom-input" id="from">
-					<label for="dateTo-entry">Enter End Date</label>
-					<input type="date" name="dateTo-input" id="to">
+				<form id="Form" onSubmit = {this.fetchNews} form action="#" method="post">
+					<label htmlFor="from">Enter Start Date</label>
+					<input type="date" ref = "from" name="dateFrom-input" id="from"/>
+					<label htmlFor="to">Enter End Date</label>
+					<input type="date" ref = "to" name="dateTo-input" id="to"/>
 					<button type="submit" className="Search">Search</button>
             	</form>
-       	 </section>
+            </section>
        	 <section id = "news_container">
        	 { news.articles.map(function(article){
-       	 	return <p>{article.snippet}</p>
+       	 	return <p>{article.web_url + article.snippet + article.lead_paragraph}</p>
     }) }
         </section>
         </div>

@@ -12,7 +12,7 @@ decribe('Content component', function() {
 		const subtitle = "subtitleExample";
 
 		const renderer = TestUtils.createRenderer();
-		renderer.render(Content title={title} subtitile={subtitle} />);
+		renderer.render(<Content title={title} subtitile={subtitle} />);
 		const result = renderer.getRenderOutput();
 	});
 });

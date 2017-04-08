@@ -1,15 +1,17 @@
-export const fetchNews = dispatch => {
-		const url = `https://api.nytimes.com/svc/search/v2/articlesearch.json${(fail, success)}`;
+export const fetchNews = (begin_date, end_date) => dispatch => {
+		const url = `https://api.nytimes.com/svc/search/v2/articlesearch.json`;
+    console.log(begin_date, end_date);
         $.ajax({
                url: url,
                data: {
-               	     begin_date: '20170403'
-               	     end_date: '20170404'
+               	     begin_date: begin_date.replace(/-/g,''),
+               	     end_date: end_date.replace(/-/g,''),
+                     apikey: '68c121c921c84a6d9ad8f460a06597ff'
                },
                method: 'GET'
         }).done(function(data){
         	if(data.status !== 'OK'){
-        		throw error;        	}
+        		throw error;        	
             }
             var articles = data.response.docs;
             dispatch(fetchNewsSuccess(articles));

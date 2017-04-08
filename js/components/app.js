@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Content from './content';
+import Content from './Content';
 
 export default function App(props) {
 	return (
-		<Content title = "New York Times Search" subtitle="Search beginning September 1851"/>
+		<Content title = "New York Times Search" subtitle="Search Beginning September 1851"/>
 	)	
 }
 
