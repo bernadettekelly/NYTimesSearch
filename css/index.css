@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 #Form {
 	display: inline-block;
 	text-align: center;
@@ -7,6 +12,7 @@
 	font-size: 16px;
 	margin-top: 20px;
 	margin-left: 340px;
+	margin-bottom: 20px;
 }
 
 #from {
@@ -35,7 +41,45 @@ h2 {
 
 .Search {
 	margin-left: 5px;
+	font-size: 14px;
+	height: 25px;
+	border-radius: 3px;
 }
 
+div {
+	background-color: #D3D3D3;
+}
+
+#header_container {
+	margin-top: 0;
+}
+
+#news_container {
+	background-color: #D3D3D3;
+	padding: 30px;
+}
+
+body{
+	background-color: #D3D3D3;
+}
+
+@media only screen and (max-width: 960px) {
+	#Form {
+		margin-left: 55px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	#to, #from {
+		display: block; 
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+
+	#Form {
+		margin-left: 100px;
+	}
+}
 
 

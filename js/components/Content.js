@@ -17,7 +17,7 @@ class Content extends React.Component {
 	
 	return (
 		<div>
-			<section>
+			<section id = "header_container">
 				<h1>{this.props.title}</h1>
 				<h2>{this.props.subtitle}</h2>
 			</section>
@@ -36,7 +36,7 @@ class Content extends React.Component {
     }) }
         </section>
         </div>
-
+        
     );
   }
 };
