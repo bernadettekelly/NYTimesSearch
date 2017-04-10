@@ -59,6 +59,10 @@ div {
 	padding: 30px;
 }
 
+p {
+	margin-bottom: 15px;
+}
+
 body{
 	background-color: #D3D3D3;
 }
