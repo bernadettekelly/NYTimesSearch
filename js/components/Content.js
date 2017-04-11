@@ -31,8 +31,8 @@ class Content extends React.Component {
             	</form>
             </section>
        	 <section id = "news_container">
-       	 { news.articles.map(function(article){
-       	 	return <p>{article.web_url} <br/>  {article.snippet} <br/> {article.lead_paragraph}</p>
+       	 { news.articles.map(function(article, index){
+       	 	return <p key={index}>{article.web_url} <br/>  {article.snippet} <br/> {article.lead_paragraph}</p>
     }) }
         </section>
         </div>
