@@ -32,7 +32,7 @@ class Content extends React.Component {
             </section>
        	 <section id = "news_container">
        	 { news.articles.map(function(article){
-       	 	return <p>{article.web_url + article.snippet + article.lead_paragraph}</p>
+       	 	return <p>{article.web_url} <br/>  {article.snippet} <br/> {article.lead_paragraph}</p>
     }) }
         </section>
         </div>
