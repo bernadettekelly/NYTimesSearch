@@ -31,8 +31,24 @@ class Content extends React.Component {
             	</form>
             </section>
        	 <section id = "news_container">
-       	 { news.articles.map(function(article, index){
-       	 	return <p key={index}>{article.web_url} <br/>  {article.snippet} <br/> {article.lead_paragraph}</p>
+       	 <div className="box">
+         	<article className="media">
+            	<div className="media-left">
+      				<figure className="image is-64x64">
+        				<img src="http://bulma.io/images/placeholders/128x128.png" alt="Image">
+      				</figure>
+    			</div>
+    			<div className="media-content">
+      			<div className="content">
+        		<p>
+       	 		<div>{news.error}</div>
+       	 		{ news.articles.map(function(article, index){
+       	 		return <div key={index}>
+       	 		<a href={article.web_url}>Link</a>
+       	    	<p>{article.snippet}</p> 
+       	    	<p>{article.lead_paragraph}</p>
+       	    	</div>
+       	    	</p>
     }) }
         </section>
         </div>

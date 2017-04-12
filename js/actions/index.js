@@ -16,9 +16,8 @@ export const fetchNews = (begin_date, end_date) => dispatch => {
             var articles = data.response.docs;
             dispatch(fetchNewsSuccess(articles));
         }).fail(function(err){
-        	dispatch(fetchNewsError(err));
-          var result = '<p>No results found</p>';
-          $('.news_container').html(result);
+        //	dispatch(fetchNewsError(err));
+            dispatch(fetchNewsError("No data found"));
         });
 }
 

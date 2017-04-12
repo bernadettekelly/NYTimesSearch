@@ -7,7 +7,7 @@ const initialState = {
 
 export const newsReducer = (state=initialState, action) => {
 	if (action.type === newsActions.FETCH_NEWS_SUCCESS) {
-		return {...state, articles: action.articles};
+		return {...state, articles: action.articles, error: null};
 	}
 	if (action.type === newsActions.FETCH_NEWS_ERROR){
 		return {...state, error: action.error};
