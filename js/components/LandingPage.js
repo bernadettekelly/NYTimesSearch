@@ -8,16 +8,14 @@ export default function LandingPage(props) {
         	<div className="hero-head">)
 				<div className="hero-body">
     			<div className="container has-text-centered">
-      				<h1>{props.LPTitle></h1>
-      				</h2>
+      				<h1>{props.LPTitle}</h1>
       				<div>
       					<p>{props.Explanation}</p>
       				</div>
-      				<Link to={'/Content/' + props.id}>
-      					{props.name}
-      				</Link>
+      				<Link to="Content">Begin</Link>
     			</div>
   				</div>
   			</div>
   		</section>
+    );
 }
