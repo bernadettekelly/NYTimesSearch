@@ -1,23 +1,7 @@
-# Thinkful React Starter
+New York Times Search
 
-A template for developing React apps.
+Summary: 
+This app allows users to input a start and end date (between September 18th, 1851 until present) and receive a link, snippet, and lead of New York Times articles from that chosen period. Its main purpose is to serve as a browsing tool to stumble upon what issues made the news in a particular era.
 
-## Getting started
-
-### Setting up a project
-
-* Move into your projects directory: `cd ~/YOUR_PROJECTS_DIRECTORY`
-* Clone this repository: `git clone https://github.com/oampo/thinkful-react-starter YOUR_PROJECT_NAME`
-* Move into the project directory: `cd YOUR_PROJECT_NAME`
-* Install the dependencies: `npm install`
-* Create a new repo on GitHub: https://github.com/new
-    * Make sure the "Initialize this repository with a README" option is left **un**checked
-* Update the remote to point to your GitHub repository: `git remote set-url origin https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME`
-
-### Working on the project
-
-* Move into the project directory: `cd ~/YOUR_PROJECTS_DIRECTORY/YOUR_PROJECT_NAME`
-* Run the development task: `npm run dev`
-    * Starts a server running at http://localhost:8080
-    * Automatically rebuilds when any of your files change
-
+Technology used: 
+The app was built using the New York Times REST API. For the frontend code, I used React, Redux, HTML, and CSS. It is responsive with paramers set for mobile, tablet, and desktop viewports.
