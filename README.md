@@ -5,3 +5,6 @@ This app allows users to input a start and end date (between September 18th, 185
 
 Technology used: 
 The app was built using the New York Times REST API. For the frontend code, I used React, Redux, HTML, and CSS. It is responsive with paramers set for mobile, tablet, and desktop viewports.
+
+Image:
+https://cloud.githubusercontent.com/assets/23124779/25029448/6b9eed28-208b-11e7-8ad1-c07724fb4c63.png
