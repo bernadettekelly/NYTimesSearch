@@ -47,7 +47,7 @@ h2 {
 	padding: 2px;
 }
 
-div {
+.hero {
 	background-color: #D3D3D3;
 }
 
@@ -62,12 +62,12 @@ div {
 
 p {
 	margin-bottom: 15px;
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 16px;
+	color: black;
 }
 
 a {
-	font-size: 24px;
+	font-size: 34px;
 	font-weight: bold;
 }
 
