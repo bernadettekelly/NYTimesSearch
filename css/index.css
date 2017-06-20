@@ -47,7 +47,7 @@ h2 {
 }
 
 div {
-	background-color: #D3D3D3;
+	background-color: #b5b5b5;
 }
 
 #header_container {
@@ -55,7 +55,7 @@ div {
 }
 
 #news_container {
-	background-color: #D3D3D3;
+	background-color: #b5b5b5;
 	padding: 30px;
 }
 
@@ -71,7 +71,7 @@ a {
 }
 
 body{
-	background-color: #D3D3D3;
+	background-color: #b5b5b5;
 }
 
 @media only screen and (max-width: 640px) {
