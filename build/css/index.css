@@ -42,13 +42,10 @@ h2 {
 .Search {
 	margin-left: 5px;
 	font-size: 14px;
+	height: 25px;
 	border-radius: 3px;
-	padding: 3px 1em;
 	background-color: #ccc;
-}
-
-div {
-	background-color: #b5b5b5;
+	width: 70px;
 }
 
 #header_container {
@@ -62,17 +59,11 @@ div {
 p {
 	margin-bottom: 15px;
 	font-size: 16px;
-	color: black;
 }
 
 a {
 	font-size: 24px;
 	font-weight: bold;
-	color: black !important;
-}
-
-.container {
-	padding: 20%;
 }
 
 body{
