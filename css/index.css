@@ -73,10 +73,6 @@ body{
 	background-color: #b5b5b5;
 }
 
-.aDiv {
-	float: left;
-}
-
 @media only screen and (max-width: 640px) {
 	h1, h2 {
 		margin-left: 40px;
