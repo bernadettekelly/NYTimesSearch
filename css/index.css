@@ -63,6 +63,7 @@ p {
 	font-size: 16px;
     margin: auto;
     text-align: left;
+    width: 50%;
 }
 
 a {
@@ -102,11 +103,17 @@ body{
 	.Search {
 		margin-top: 5px;
 	}
+	html {
+		min-width: 695px;
+	}
 }
 
 @media only screen and (min-width: 768px) {
 	#Form {
 		margin-left: 110px;
+	}
+	.content {
+		width: 80%;
 	}
 }
 
@@ -114,6 +121,7 @@ body{
 	#Form {
 		margin-left: 220px;
 	}
+	
 }
 
 @media only screen and (min-width: 1280px) {
