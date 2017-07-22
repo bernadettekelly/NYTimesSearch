@@ -63,7 +63,10 @@ p {
 	font-size: 16px;
     margin: auto;
     text-align: left;
-    width: 50%;
+}
+
+.explanation {
+	width: 50%;
 }
 
 a {
