@@ -86,10 +86,13 @@ body{
 		display: block;
 	}
 	#Form {
-		margin-left: 140px;
+		margin-left: 150px;
 	}
 	.Search {
 		margin-top: 5px;
+	}
+	#news_container {
+		width: 95%;
 	}
 }
 
@@ -101,13 +104,16 @@ body{
 		display: block;
 	}
 	#Form {
-		margin-left: 110px;
+		margin-left: 280px;
 	}
 	.Search {
 		margin-top: 5px;
 	}
 	html {
 		min-width: 695px;
+	}
+	#news_container {
+		width: 75%;
 	}
 }
 
