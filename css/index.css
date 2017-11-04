@@ -88,6 +88,7 @@ p {
 a {
 	font-size: 16px;
 	font-weight: bold;
+	transform: scale(1);
 }
 
 body, html{
@@ -106,6 +107,15 @@ i {
 	 transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
    }
+  a:hover {
+	transition: all 200ms ease-in;
+	transform: scale(1.1); 
+	}	
+
+.Search:hover {
+	transition: all 200ms ease-in;
+	transform: scale(1.1); 
+	}
 
 @media only screen and (max-width: 640px) {
 	h1, h2 {
@@ -218,6 +228,15 @@ i {
 	width: 70px;
 	border: none;
 	margin-top: 10px;
+	}
+	a:hover {
+	transition: all 200ms ease-in;
+	transform: scale(1.1); 
+	}	
+
+	.Search:hover {
+	transition: all 200ms ease-in;
+	transform: scale(1.1); 
 	}
 
 }
