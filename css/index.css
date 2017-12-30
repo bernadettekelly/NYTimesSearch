@@ -91,7 +91,6 @@ a {
 	font-size: 16px;
 	font-weight: bold;
 	transform: scale(1);
-	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
 
 body, html{
@@ -106,11 +105,16 @@ i {
     margin-left: 7px;
 }
 
-.arrow{
+.arrowClass{
 	 transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
    }
-  a:hover {
+
+   .arrow{
+	 transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+   }
+  .arrowClass:hover {
 	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   	transition: box-shadow 0.3s ease-in-out;
 	}	
