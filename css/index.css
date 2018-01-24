@@ -132,14 +132,14 @@ i {
 
 @media only screen and (max-width: 640px) {
 	h1, h2 {
-		margin-left: 40px;
+		margin-left: 0px;
 	}
 	#to, #from {
 		display: block;
 		padding: 2px;
 	}
 	#Form {
-		margin-left: 37%;
+		margin-left: 32%;
 	}
 	.Search {
 		margin-top: 5px;
@@ -154,7 +154,7 @@ i {
 
 @media only screen and (max-width: 320px) {
 	h1, h2 {
-		margin-left: 40px;
+		margin-left: 0px;
 	}
 	#to, #from {
 		display: block;
@@ -183,6 +183,9 @@ i {
 	margin-top: 10px;
 	}
 }
+
+@media only screen and (max-width: 375px) {
+
 
 @media only screen and (max-width: 414px) {
 	#header_container {
