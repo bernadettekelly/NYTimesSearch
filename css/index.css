@@ -184,6 +184,14 @@ i {
 	}
 }
 
+@media only screen and (max-width: 414px) {
+	#header_container {
+	margin-top: 0;
+	margin: 1 -5%;
+	width: 100%;
+	}	
+}
+
 @media only screen and (min-width: 768px) {
 	#Form {
 		margin-left: 310px;
@@ -201,6 +209,11 @@ i {
 	width: 70px;
 	border: none;
 	margin-top: 10px;
+	}
+	#header_container {
+	margin-top: 0;
+	margin: 0%;
+	width: 100%;
 	}
 }
 
