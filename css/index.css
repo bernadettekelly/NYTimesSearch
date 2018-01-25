@@ -194,7 +194,7 @@ i {
 		margin-top: 10px;
 	}
 	#news_container {
-		width: 100%;
+		width: 90%;
 	}
 }
 
@@ -253,6 +253,9 @@ i {
 	border: none;
 	margin-top: 10px;
 	}
+	#news_container {
+		width: 80%;
+	}
 	
 }
 
@@ -288,6 +291,9 @@ i {
 	border: none;
 	margin-top: 10px;
 	}	
+	#news_container {
+		width: 75%;
+	}
 
 }
 
